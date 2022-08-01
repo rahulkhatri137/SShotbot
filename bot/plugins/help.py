@@ -5,14 +5,16 @@ from bot.screenshotbot import ScreenShotBot
 from bot.config import Config
 
 
-BUTTONS = [[
-    InlineKeyboardButton('🏡 Home', callback_data='home'),
-    InlineKeyboardButton('🚸 Powered By', callback_data='t.me/MoviesFlixers_DL'),
-    InlineKeyboardButton('🔐 Close ', callback_data='close')
-]]
+    BUTTONS = [[
+        InlineKeyboardButton("♨ Powered By", url="https://t.me/MoviesFlixers_DL"),
+        InlineKeyboardButton("👤 About", callback_data="about")
+        ],[
+        InlineKeyboardButton("🏡 Home", callback_data="home"),
+        InlineKeyboardButton("🔐 Close", callback_data="close")
+    ]]
 
 HELP_TEXT = """
-Hey! {mention}. Welcome to Screenshot Generator Bot. You can use me to generate:
+Hey! {mention}. You can use me to generate:
 
     1. Screenshots.
     2. Sample Video.
