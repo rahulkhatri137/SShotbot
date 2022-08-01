@@ -12,8 +12,8 @@ async def start(c, m, cb=False):
     if forcesub == 400:
         return
     owner_id = Config.AUTH_USERS[0]
-    username = 'TheTeleRoid'
-    mention = '[Pʀᴇᴅ∆ᴛᴏʀ](https://t.me/MoviesFlixers_dL)'
+    username = 'TeleRoidGroup'
+    mention = '[ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ 🇮🇳](https://t.me/MoviesFlixers_dL)'
     try:
         owner = await c.get_users(owner_id)
         username = owner.username if owner.username else 'PredatorHackerzZ'
@@ -22,9 +22,6 @@ async def start(c, m, cb=False):
         print(e)
 
     BUTTONS = [[
-        InlineKeyboardButton("♂️ Support", url=f"https://t.me/TeleRoid14"),
-        InlineKeyboardButton("🔔 Channel", url="https://t.me/TeleRoidGroup")
-        ],[
         InlineKeyboardButton("🛠 Settings", callback_data="set+settings")
         ],[
         InlineKeyboardButton("♻ Help", callback_data="help"),
@@ -33,7 +30,7 @@ async def start(c, m, cb=False):
         InlineKeyboardButton("🔐 Close", callback_data="close")
     ]]
 
-    TEXT = f"👋 Hai! {m.from_user.mention},\n\nI'm Screenshot Generator Bot. I can provide screenshots, sample video from "
+    TEXT = f"👋 Hello! {m.from_user.mention},\n\nI'm Screenshot Generator Bot. I can provide screenshots, sample video from "
     TEXT += "your medias and also can trim. For more details check /help.\n\n"
     TEXT += f"**Maintained By:** @TheTeleRoid"
 
