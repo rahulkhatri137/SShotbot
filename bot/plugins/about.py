@@ -7,12 +7,12 @@ from bot.database.forcesub import ForceSub
 
 
 BUTTONS = [[
-        InlineKeyboardButton("♨ Powered By", url="https://t.me/MoviesFlixers_DL"),
-        InlineKeyboardButton("♻ Help", callback_data="help")
-        ],[
-        InlineKeyboardButton("🏡 Home", callback_data="home"),
-        InlineKeyboardButton("🔐 Close", callback_data="close")
-    ]]
+    InlineKeyboardButton("♨ Powered By", url="https://t.me/MoviesFlixers_DL"),
+    InlineKeyboardButton("♻ Help", callback_data="help")
+    ],[
+    InlineKeyboardButton("🏡 Home", callback_data="home"),
+    InlineKeyboardButton("🔐 Close", callback_data="close")
+]]
 
 ABOUT_TEXT = """
 <b>Mʏ ɴᴀᴍᴇ : <a href='http://t.me/TeleRoudScreenshotBot'>Screen ʙᴏᴛ</a></b>
