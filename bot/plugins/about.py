@@ -7,35 +7,33 @@ from bot.database.forcesub import ForceSub
 
 
 BUTTONS = [[
-    InlineKeyboardButton('🏡 Home', callback_data='home'),
-    InlineKeyboardButton('🚸 Powered By', url='t.me/MoviesFlixers_DL'),
-    InlineKeyboardButton('♻ Help', callback_data='help')
-]]
+        InlineKeyboardButton("♨ Powered By", url="https://t.me/MoviesFlixers_DL"),
+        InlineKeyboardButton("♻ Help", callback_data="help")
+        ],[
+        InlineKeyboardButton("🏡 Home", callback_data="home"),
+        InlineKeyboardButton("🔐 Close", callback_data="close")
+    ]]
 
 ABOUT_TEXT = """
-╭────[🔅Sᴄʀᴇᴇɴsʜᴏᴛ Bᴏᴛ🔅]───⍟
-│
-├<b>🤖 Bot Name : <a href='https://t.me/TeleRoid_Screenshot_Bot'>@TeleRoid_Screenshot_Bot</a></b>
-│
-├<b>📢 Channel : <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a></b>
-│
-├<b>♂️ Support: <a href='https://t.me/TeleRoid14'>@TeleRoidSupport</a></b>
-│
-├<b>👥 Version : <a href='https://t.me/TeleRoid_Screenshot_Bot'>0.9.2 beta</a></b>
-│
-├<b>🛠 Source : <a href='https://github.com/PredatorHackerzZ'>Click Here</a></b>
-│
-├<b>🌐 Server : <a href='https://heroku.com'>Heroku</a></b>
-│
-├<b>📕 Library : <a href='https://github.com/pyrogram'>Pyrogram 1.2.8</a></b>
-│
-├<b>㊙ Language: <a href='https://www.python.org'>Python 3.9.4</a></b>
-│
-├<b>👨‍💻 Developer : <a href='https://t.me/PredatorHackerZ'>Pred∆tor</a></b>
-│
-├<b>🚸 Powered By : <a href='https://t.me/Moviesflixers_DL'>@HindiWebNetwork</a></b>
-│
-╰────────[Thank Yiu]───⍟
+<b>Mʏ ɴᴀᴍᴇ : <a href='http://t.me/TeleRoudScreenshotBot'>Screen ʙᴏᴛ</a></b>
+
+<b>Cʜᴀɴɴᴇʟ : <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a></b>
+
+<b>Sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/TeleRoid14'>@TeleRoid14</a></b>
+
+<b>Vᴇʀꜱɪᴏɴ : <a href='https://t.me/joinchat/t1ko_FOJxhFiOThl'>2.0 ʙᴇᴛᴀ</a></b>
+
+<b>Sᴏᴜʀᴄᴇ : <a href='https://github.com/PredatorHackerzZ'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
+
+<b>Sᴇʀᴠᴇʀ : <a href='https://heroku.com/'>ʜᴇʀᴏᴋᴜ</a></b>
+
+<b>Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/'>Pʏᴛʜᴏɴ 3.10.2</a></b>
+
+<b>Fʀᴀᴍᴇᴡᴏʀᴋ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢᴀᴍ 1.3.6</a></b>
+
+<b>Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MoviesFlixers_DL'>Pʀᴇᴅᴀᴛᴏʀ</a></b>
+
+<b>Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/TheTeleRoid'>@TheTeleRoid</a></b>
 
 __If issues persists contact my Master.__
 
