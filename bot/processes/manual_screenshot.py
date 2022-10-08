@@ -166,10 +166,7 @@ class ManualScreenshotsProcess(BaseProcess):
                         )
                     )
                     if os.path.exists(thumbnail_file):
-                        if as_file:
-                            InputMedia = InputMediaDocument
-                        else:
-                            InputMedia = InputMediaPhoto
+                        InputMedia = InputMediaDocument if as_file else InputMediaPhoto
                         screenshots.append(
                             InputMedia(
                                 thumbnail_file,

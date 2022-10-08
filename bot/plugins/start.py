@@ -16,7 +16,7 @@ async def start(c, m, cb=False):
     mention = '[ツAʙʜɪsʜᴇᴋ Kᴜᴍᴀʀ 🇮🇳](https://t.me/MoviesFlixers_dL)'
     try:
         owner = await c.get_users(owner_id)
-        username = owner.username if owner.username else 'PredatorHackerzZ'
+        username = owner.username or 'PredatorHackerzZ'
         mention = owner.mention(style="md")
     except Exception as e:
         print(e)
@@ -32,7 +32,7 @@ async def start(c, m, cb=False):
 
     TEXT = f"👋 Hello! {m.from_user.mention},\n\nI'm Screenshot Generator Bot. I can provide screenshots, sample video from "
     TEXT += "your medias and also can trim. For more details check /help.\n\n"
-    TEXT += f"**Maintained By:** @TheTeleRoid"
+    TEXT += "**Maintained By:** @TheTeleRoid"
 
     if cb:
         try:

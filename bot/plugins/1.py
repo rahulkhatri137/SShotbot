@@ -39,15 +39,14 @@ async def foo(c, m, cb=False):
                     c.CHAT_FLOOD[chat_id] = int(time.time())
             except:
                 pass
-    else:
-        if (m.text and not m.text.startswith("/")) or (m.caption):
-            try:
-                if consumed_time < Config.SLOW_SPEED_DELAY:
-                    return await m.reply_text(text, quote=True)
-                else:
-                    c.CHAT_FLOOD[chat_id] = int(time.time())
-            except:
-                pass
+    elif (m.text and not m.text.startswith("/")) or (m.caption):
+        try:
+            if consumed_time < Config.SLOW_SPEED_DELAY:
+                return await m.reply_text(text, quote=True)
+            else:
+                c.CHAT_FLOOD[chat_id] = int(time.time())
+        except:
+            pass
 
 
     if not await db.is_user_exist(chat_id):

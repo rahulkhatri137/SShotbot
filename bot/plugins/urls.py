@@ -18,9 +18,8 @@ async def _(c, m):
     if m.media:
         if not Utilities.is_valid_file(m):
             return
-    else:
-        if not Utilities.is_url(m.text):
-            return
+    elif not Utilities.is_url(m.text):
+        return
 
     snt = await m.reply_text(
         "Hi there, Please wait while I'm getting everything ready to process your request!",
