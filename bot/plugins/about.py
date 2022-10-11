@@ -3,11 +3,9 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from bot.screenshotbot import ScreenShotBot
 from bot.config import Config
-from bot.database.forcesub import ForceSub
-
 
 BUTTONS = [[
-    InlineKeyboardButton("♨ Powered By", url="https://t.me/MoviesFlixers_DL"),
+    InlineKeyboardButton("♨ Powered By", url="https://t.me/bots137"),
     InlineKeyboardButton("♻ Help", callback_data="help")
     ],[
     InlineKeyboardButton("🏡 Home", callback_data="home"),
@@ -15,25 +13,11 @@ BUTTONS = [[
 ]]
 
 ABOUT_TEXT = """
-<b>Mʏ ɴᴀᴍᴇ : <a href='http://t.me/TeleRoudScreenshotBot'>Screen ʙᴏᴛ</a></b>
-
-<b>Cʜᴀɴɴᴇʟ : <a href='https://t.me/TeleRoidGroup'>@TeleRoidGroup</a></b>
-
-<b>Sᴜᴘᴘᴏʀᴛ : <a href='https://t.me/TeleRoid14'>@TeleRoid14</a></b>
-
-<b>Vᴇʀꜱɪᴏɴ : <a href='https://t.me/joinchat/t1ko_FOJxhFiOThl'>2.0 ʙᴇᴛᴀ</a></b>
-
-<b>Sᴏᴜʀᴄᴇ : <a href='https://github.com/PredatorHackerzZ'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>
-
-<b>Sᴇʀᴠᴇʀ : <a href='https://heroku.com/'>ʜᴇʀᴏᴋᴜ</a></b>
+<b>Cʜᴀɴɴᴇʟ : <a href='https://t.me/Bots137'>Bots137</a></b>
 
 <b>Lᴀɴɢᴜᴀɢᴇ : <a href='https://www.python.org/'>Pʏᴛʜᴏɴ 3.10.2</a></b>
 
 <b>Fʀᴀᴍᴇᴡᴏʀᴋ : <a href='https://docs.pyrogram.org/'>ᴘʏʀᴏɢᴀᴍ 1.3.6</a></b>
-
-<b>Dᴇᴠᴇʟᴏᴘᴇʀ : <a href='https://t.me/MoviesFlixers_DL'>Pʀᴇᴅᴀᴛᴏʀ</a></b>
-
-<b>Mᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ : <a href='https://t.me/TheTeleRoid'>@TheTeleRoid</a></b>
 
 __If issues persists contact my Master.__
 
@@ -46,9 +30,6 @@ ADMIN_NOTIFICATION_TEXT = (
 
 @ScreenShotBot.on_message(filters.private & filters.command("about"))
 async def about_(c, m):
-    forcesub = await ForceSub(c, m,)
-    if forcesub == 400:
-        return
     await m.reply_text(
         text=ABOUT_TEXT.format(
             mention=m.from_user.mention,

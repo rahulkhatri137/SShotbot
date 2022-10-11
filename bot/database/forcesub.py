@@ -13,7 +13,7 @@ async def ForceSub(bot: Client, cmd: Message):
         if user.status == "kicked":
             await bot.send_message(
                 chat_id=cmd.from_user.id,
-                text="Sorry Son, You are Banned to use me. Contact my [Support Group](https://t.me/TeleRoid14).",
+                text="Sorry Son, You are Banned to use me.",
                 parse_mode="markdown",
                 disable_web_page_preview=True
             )
@@ -25,7 +25,7 @@ async def ForceSub(bot: Client, cmd: Message):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🤖 Join Updates Channel", url="https://t.me/TeleRoidGroup")
+                        InlineKeyboardButton("🤖 Join Updates Channel", url="https://t.me/bots137")
                     ]
                 ]
             ),
@@ -35,9 +35,9 @@ async def ForceSub(bot: Client, cmd: Message):
     except Exception:
         await bot.send_message(
             chat_id=cmd.from_user.id,
-            text="Something went Wrong. Contact my [Support Group](https://t.me/TeleRoid14).\n\n**@TheTeleRoid**",
+            text="**Powered by @Bots137**\n",
             parse_mode="markdown",
             disable_web_page_preview=True
         )
         return 400
-    return 200
+    return 400

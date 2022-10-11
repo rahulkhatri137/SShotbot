@@ -19,8 +19,7 @@ class Messages:
         "Now starting to upload!"
     )
     PROCESS_UPLOAD_CONFIRM = (
-        "Successfully completed process in {total_process_duration}\n\n"
-        "If You find me helpful, please rate me [here](tg://resolve?domain=botsarchive&post=1206)."
+        "Successfully completed process in {total_process_duration}"
     )
     WRONG_FORMAT = "Please follow the specified format"
     VIDEO_PROCESS_CAPTION = "Sample video. {duration}s from {start}"

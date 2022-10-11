@@ -6,7 +6,7 @@ from bot.config import Config
 
 
 BUTTONS = [[
-    InlineKeyboardButton("♨ Powered By", url="https://t.me/MoviesFlixers_DL"),
+    InlineKeyboardButton("♨ Powered By", url="https://t.me/bots137"),
     InlineKeyboardButton("👤 About", callback_data="about")
     ],[
     InlineKeyboardButton("🏡 Home", callback_data="home"),
